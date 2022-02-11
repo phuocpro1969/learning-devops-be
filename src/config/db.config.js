@@ -6,9 +6,9 @@ module.exports = {
   DB: process.env.DB,
   dialect: "mysql",
   pool: {
-    max: Integer.parseInt(process.env.MAX_POOL),
-    min: Integer.parseInt(process.env.MIN_POOL),
-    acquire: Integer.parseInt(process.env.ACQUIRE_POOL),
-    idle: Integer.parseInt(process.env.IDLE_POOL)
+    max: parseInt(process.env.MAX_POOL),
+    min: parseInt(process.env.MIN_POOL),
+    acquire: parseInt(process.env.ACQUIRE_POOL),
+    idle: parseInt(process.env.IDLE_POOL)
   }
 };
