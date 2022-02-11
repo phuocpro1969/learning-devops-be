@@ -8,7 +8,7 @@ const dotenv = require('dotenv')
 dotenv.config();
 
 app.use(cors());
-
+console.log(process.env.MIN_POOL);
 // init db
 const db = require("./models");
 db.sequelize.sync();
