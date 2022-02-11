@@ -9,7 +9,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./src:/app
+      - ./src:/app/src
       - exclusive-backend:/app/node_modules
     env_file:
       - ./.env
