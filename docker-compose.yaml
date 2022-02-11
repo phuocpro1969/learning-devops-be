@@ -16,7 +16,7 @@ services:
       - ./.env
     networks:
       - backend_network
-    command: npm run ${1:-start}
+    command: npm run ${RUN:-start}
 networks:
   backend_network:
 volumes:
