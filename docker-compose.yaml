@@ -17,3 +17,7 @@ services:
     networks:
       - backend_network
     command: npm run dev
+networks:
+  backend_network:
+volumes:
+  exclusive-backend:
